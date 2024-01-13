@@ -5,7 +5,10 @@
     "main": "index.js",
     "scripts": {
         "dev": "node out.js",
-        "build": "esbuild app.jsx --bundle --outfile=out.js"
+        "build": "esbuild app.jsx --bundle --outfile=out.js",
+        "bBuild": "esbuild app.jsx --bundle --minify --sourcemap --target=chrome58,firefox57,safari11,edge16",
+        "mjsBuild": "node build/build.mjs",
+        "browserBuild": "node build/forBrowserBuild.mjs"
     },
     "author": "weeeeey",
     "license": "ISC",
