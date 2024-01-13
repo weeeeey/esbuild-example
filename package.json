@@ -1,0 +1,19 @@
+{
+    "name": "esbuild",
+    "version": "0.0.1",
+    "description": "esbuild example",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node out.js",
+        "build": "esbuild app.jsx --bundle --outfile=out.js"
+    },
+    "author": "weeeeey",
+    "license": "ISC",
+    "devDependencies": {
+        "esbuild": "0.19.11"
+    },
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
+}
